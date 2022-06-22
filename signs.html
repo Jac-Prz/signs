@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Signs</title>
+  <link rel="stylesheet" href="signs.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/4f20a02fa5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="logo">
+      <a>Signs.</a>
+    </div>
+
+    <div class="links">
+      <a href="#">Match Maker</a>
+      <a href="#">Weekly Reading</a>
+      <a href="#">Option 3</a>
+    </div>
+  </nav>
+
+  <!-- main container -->
+  <div class="main-container">
+
+    <!-- Title -->
+    <div class="welcome-div welcome">
+      <h1>Signs</h1>
+      <h3 class="dim">your personalised astrological guidance</h3>
+      <button class="transparent-button" type="button" name="button"><i class="fa-solid fa-angles-down"></i></button>
+    </div>
+
+    <!-- welcome input form -->
+    <div id="welcome" class="welcome-page welcome container thin">
+      <h3>Welcome to Signs!</h3>
+      <div class="inputs">
+        <label>What should we call you?</label>
+        <input id="yourName" class="form" type="text" value="Your Name">
+        <label> When were you born?</label>
+        <input id="date" class="form" type="date">
+        <button id="start-btn"> Lets get started! </button>
+      </div>
+    </div>
+
+    <!-- now info is submitted - first page -->
+    <!-- CONTAINER 1 -->
+    <div id="sunDiv" class="container first-page hide-first-page">
+      <img id="sun" src="" alt="image">
+      <!-- your sign and info -->
+      <div id="yourSignIntro">
+        <h2 id="answer"></h2>
+        <p></p>
+      </div>
+    </div>
+
+
+    <!-- CONTAINER 2 -->
+    <div class="container first-page hide-first-page">
+      <h5 id="guidance">How can we offer guidance? </h5>
+
+      <div class="realms">
+        <button id="relationships-btn" class="help-buttons">
+          <i class="fas fa-user-friends"></i> <br>
+          <span>Relationships</span>
+        </button>
+        <button id="other-btn" class="help-buttons">
+          <i class="fas fa-question"></i>
+          <span>Other</span>
+        </button>
+        <button id="work-btn" class="help-buttons">
+          <i class="fas fa-laptop"></i>
+          <span>Work</span>
+        </button>
+      </div>
+
+      <div class=" second-part">
+        <div id="relationships" class="hide-me thanks-universe">
+          <h3>Relationships. What kind?</h3>
+          <button id="fam" class="second-part-button">family</button>
+          <button id="lover" class="second-part-button">lover</button>
+          <button id="friend" class="second-part-button">friend</button>
+          <button id="acqu" class="second-part-button">acquaintence</button>
+        </div>
+        <div id="relationships-their-sign" class="hide-me thanks-universe">
+          <h4>And whats their star-sign?</h4>
+          <button class="Capricorn">
+            <img src="images/Capricorn.png" alt="Capricorn" class="rel-img">
+            Capricorn
+          </button>
+          <button class="Acquarius">
+            <img src="images/Acquarius.png" alt="Acquarius" class="rel-img">
+            Acquarius
+          </button>
+          <button class="Pisces">
+            <img src="images/Pisces.png" alt="Pisces" class="rel-img">
+            Pisces
+          </button>
+          <button class="Aries">
+            <img src="images/Aries.png" alt="Aries" class="rel-img">
+            Aries
+          </button>
+          <button class="Taurus">
+            <img src="images/Taurus.png" alt="Taurus" class="rel-img">
+            Taurus
+          </button>
+          <button class="Gemini">
+            <img src="images/Gemini.png" alt="Gemini" class="rel-img">
+            Gemini
+          </button>
+          <button class="Cancer">
+            <img src="images/Cancer.png" alt="Cancer" class="rel-img">
+            Cancer
+          </button>
+          <button class="Leo">
+            <img src="images/Leo.png" alt="Leo" class="rel-img">
+            Leo
+          </button>
+          <button class="Virgo">
+            <img src="images/Virgo.png" alt="Virgo" class="rel-img">
+            Virgo
+          </button>
+          <button class="Libra">
+            <img src="images/Libra.png" alt="Libra" class="rel-img">
+            Libra
+          </button>
+          <button class="Scorpio">
+            <img src="images/Scorpio.png" alt="Scorpio" class="rel-img">
+            Scorpio
+          </button>
+          <button class="Sagittarius">
+            <img src="images/Sagittarius.png" alt="Sagittarius" class="rel-img">
+            Sagittarius
+          </button>
+          <button class="Unknown">
+            <img src="images/Unknown.png" alt="unknown" class="rel-img">
+            Unknown
+          </button>
+        </div>
+        <div id="relationships-answer" class="hide-me thanks-universe">
+          <h4> </h4>
+          <p class="advice-paragraph"> </p>
+        </div>
+        <div id="other" class="hide-me thanks-universe">
+          <h3>Other.</h3>
+          <h4>Ok, whats up?</h4>
+          <button id="cat-advice" class="second-part-button">Should I get a cat?</button>
+          <button id="other-advice" class="second-part-button">Just give me some advice</button>
+          <p class="advice-paragraph"></p>
+        </div>
+        <div id="work" class="hide-me thanks-universe">
+          <h3>Work</h3>
+          <h4> Lets get more specific!</h4>
+          <button id="career-advice" class="second-part-button">Should I change carreers</button>
+          <button id="boss-advice" class="second-part-button">My boss/colleague is a turd</button>
+          <!-- <button id="work-advice" class="second-part-button">Just give me some advice</button> -->
+          <p class="advice-paragraph"></p>
+        </div>
+        <!-- back button -->
+        <button id="back" class="hide-me second-part-button">Back</button>
+      </div>
+    </div>
+
+    <!-- main container div -->
+  </div>
+  <footer>
+    copyright 2022 jprib media
+  </footer>
+  <script src="signs.js" charset="utf-8"></script>
+</body>
+
+</html>

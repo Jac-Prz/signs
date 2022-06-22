@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Lato:wght@300;400&family=Playfair+Display:wght@400;500&family=Roboto+Condensed&display=swap');
+
+body{
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Dongle', sans-serif;
+  text-align: center;
+  background-image: url(images/scattered-white-sm1.jpg)
+}
+h1{
+  color: black;
+  font-size: 8rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1rem;
+}
+h2, h3, h4, h5{
+  color: black;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .3rem;
+}
+h5{
+  font-size: 3.5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+p{
+  font-size: 2rem;
+  color: black;
+}
+button{
+  display: block;
+  padding: .5rem 1rem;
+  margin: 10px 0;
+  font-size: 2rem;
+  font-family: inherit;
+  border-radius: 8px;
+  border: none;
+  background-color: black;
+  color:white;
+  letter-spacing: .1rem;
+}
+footer{
+  background-color: black;
+  color:white;
+}
+.main-container{
+padding-bottom:10%;
+}
+
+/* navbar */
+nav{
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5%;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  margin: 5px 20px;
+}
+nav a:hover{
+  color: #e9e5d8;
+}
+
+/* welcome - heading */
+.welcome-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: inherit;
+  padding-top: 80px;
+}
+.welcome-div h1{
+  margin-bottom: 0;
+}
+.dim{
+  color: #525252;
+}
+.transparent-button{
+  background-color: transparent;
+}
+
+.fa-angles-down{
+  color: #525252;
+  margin-top: 20px;
+}
+
+/* welcome  -  inputs */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% auto;
+  width:90%;
+  max-width: 1150px;
+  }
+.container.thin{
+  max-width:400px;
+}
+
+label {
+  font-size: 2rem;
+  display: inline-flex;
+}
+.form{
+  background: #e9e5d8;
+  display: inline-flex;
+  margin: 20px 0 30px;
+  height: 2rem;
+  width: 306.4px;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+#welcome h3{
+  padding-bottom: 20px;
+}
+#welcome button{
+  display: inline-flex;
+  margin: 80px 0;
+}
+
+/* first page  */
+/* sun + sign picture */
+.first-page-div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: inherit;
+  margin: 0 10%;
+  padding-top: 5%
+}
+#sun{
+  max-width:140px;
+  width:100%;
+  opacity: 0;
+  transition: opacity 3s;
+  margin-top:20px;
+}
+#sun.visible{
+  opacity: 1;
+  }
+
+/* Your starsign info */
+#answer{
+  font-size: 4rem;
+    }
+
+#yourSignIntro p{
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 8px;
+
+}
+.star-divider{
+  height:50px;
+  padding:80px;
+}
+.help-buttons{
+  display: inline-block;
+  font-size: 3rem;
+  color: black;
+  width: 150px;
+  margin:5px;
+  padding:12px 16px 4px;
+  border: solid transparent;
+  background: transparent;
+  }
+.help-buttons span {
+  font-size: 1.5rem;
+  position:relative;
+  display: block;
+}
+.help-buttons:hover{
+  color:grey;
+  border:solid grey;
+}
+.hide-first-page{
+  display: none;
+}
+
+/* second part - work, relationships or other */
+
+.second-part-button{
+  display: inline-flex;
+  background-color: rgb(255, 255, 255, 0.6);
+  color:black;
+  font-size: 1.5rem;
+  border: solid black 2px;
+  margin: 8px 4px;
+  padding: 4px 8px;
+  }
+
+.second-part-button:hover{
+color: grey;
+border: solid grey 2px;
+}
+
+#relationships-family{
+  max-width: 950px;
+}
+#relationships-their-sign button{
+  display: inline-block;
+  text-align: center;
+  background-color: inherit;
+  margin: 15px;
+  padding: 5px;
+  width: 60px;
+  height:50px;
+  font-size: 1rem;
+  color: white;
+}
+#relationships-their-sign button:hover{
+  color:black;
+  background-color: #D3D3D3;
+  border-radius: 8px;
+}
+.rel-img{
+  height: 90%;
+  }
+
+.hide-thanks{
+  display: none;
+}
+.hide-me{
+  display:none;
+}
+.hide-second-part{
+  display: none;
+}
