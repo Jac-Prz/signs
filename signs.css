@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Lato:wght@300;400&family=Playfair+Display:wght@400;500&family=Roboto+Condensed&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   font-size: 1.5rem;
@@ -7,27 +9,25 @@ body{
   text-align: center;
   background-image: url(images/scattered-white-sm1.jpg)
 }
-h1{
-  color: black;
-  font-size: 8rem;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 1rem;
-}
-h2, h3, h4, h5{
+h1, h2, h3, h4, h5{
   color: black;
   font-family: 'Playfair Display', serif;
   letter-spacing: .3rem;
 }
-h5{
-  font-size: 3.5rem;
+h1{
+  font-size: 8rem;
+  letter-spacing: 1rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 h3{
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h4{
+  font-size: 2rem;
+}
+h5{
   font-size: 1.5rem;
 }
 p{
@@ -61,19 +61,20 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 5%;
-}
+  padding: 0 5%;
+  }
 nav a{
+  display: inline-block;
   color: white;
   text-decoration: none;
-  margin: 5px 20px;
+  padding: 10px 20px;
 }
 nav a:hover{
-  color: #e9e5d8;
+  background-color: #525252;
 }
 
-/* welcome - heading */
-.welcome-div{
+/* title div*/
+.title-div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,22 +82,18 @@ nav a:hover{
   background-color: inherit;
   padding-top: 80px;
 }
-.welcome-div h1{
+.title-div h1{
   margin-bottom: 0;
 }
-.dim{
+.grey{
   color: #525252;
 }
-.transparent-button{
-  background-color: transparent;
-}
-
 .fa-angles-down{
-  color: #525252;
   margin-top: 20px;
+  font-size: 2rem;
 }
 
-/* welcome  -  inputs */
+/* welcome / inputs */
 .container{
   display: flex;
   align-items: center;
@@ -109,7 +106,6 @@ nav a:hover{
 .container.thin{
   max-width:400px;
 }
-
 label {
   font-size: 2rem;
   display: inline-flex;
@@ -126,7 +122,6 @@ label {
   border-radius: 8px;
   padding: 5px 10px;
 }
-
 #welcome h3{
   padding-bottom: 20px;
 }
@@ -134,9 +129,8 @@ label {
   display: inline-flex;
   margin: 80px 0;
 }
-
 /* first page  */
-/* sun + sign picture */
+/* symbol & sign description */
 .first-page-div{
   display: flex;
   justify-content: center;
@@ -145,32 +139,29 @@ label {
   margin: 0 10%;
   padding-top: 5%
 }
-#sun{
-  max-width:140px;
-  width:100%;
+.announce-zodiac{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0 10%;
+}
+#symbol{
+  max-width:150px;
   opacity: 0;
   transition: opacity 3s;
-  margin-top:20px;
+  padding-right:20px;
 }
-#sun.visible{
+#symbol.visible{
   opacity: 1;
   }
-
-/* Your starsign info */
-#answer{
-  font-size: 4rem;
-    }
 
 #yourSignIntro p{
   background-color: rgb(255, 255, 255, 0.6);
   border-radius: 8px;
-
 }
-.star-divider{
-  height:50px;
-  padding:80px;
-}
-.help-buttons{
+/* guidance section */
+.btn-icon{
   display: inline-block;
   font-size: 3rem;
   color: black;
@@ -180,45 +171,39 @@ label {
   border: solid transparent;
   background: transparent;
   }
-.help-buttons span {
+.btn-icon span {
   font-size: 1.5rem;
   position:relative;
   display: block;
 }
-.help-buttons:hover{
-  color:grey;
-  border:solid grey;
+.btn-icon:hover{
+  color: #525252;
+  border:solid  #525252;
 }
 .hide-first-page{
   display: none;
 }
 
 /* second part - work, relationships or other */
-
-.second-part-button{
+.btn-sml{
+  margin: 8px 4px;
+  padding: 4px 8px;
   display: inline-flex;
   background-color: rgb(255, 255, 255, 0.6);
   color:black;
   font-size: 1.5rem;
   border: solid black 2px;
-  margin: 8px 4px;
-  padding: 4px 8px;
   }
-
-.second-part-button:hover{
+.btn-sml:hover{
 color: grey;
 border: solid grey 2px;
 }
-
-#relationships-family{
-  max-width: 950px;
-}
 #relationships-their-sign button{
+  margin: 8px 4px;
+  padding: 4px 8px;
   display: inline-block;
   text-align: center;
   background-color: inherit;
-  margin: 15px;
-  padding: 5px;
   width: 60px;
   height:50px;
   font-size: 1rem;
@@ -229,7 +214,7 @@ border: solid grey 2px;
   background-color: #D3D3D3;
   border-radius: 8px;
 }
-.rel-img{
+.their-icon{
   height: 90%;
   }
 
@@ -238,7 +223,4 @@ border: solid grey 2px;
 }
 .hide-me{
   display:none;
-}
-.hide-second-part{
-  display: none;
 }

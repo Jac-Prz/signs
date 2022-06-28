@@ -18,153 +18,158 @@
 
     <div class="links">
       <a href="#">Match Maker</a>
-      <a href="#">Weekly Reading</a>
-      <a href="#">Option 3</a>
+      <a href="#">Magic 8 Ball</a>
+      <a href="index.html">Refresh</a>
     </div>
   </nav>
 
   <!-- main container -->
   <div class="main-container">
-
-    <!-- Title -->
-    <div class="welcome-div welcome">
+<!-- WELCOME PAGE -->
+<!-- Title Div-->
+    <div class="title-div welcome">
       <h1>Signs</h1>
-      <h3 class="dim">your personalised astrological guidance</h3>
-      <button class="transparent-button" type="button" name="button"><i class="fa-solid fa-angles-down"></i></button>
+      <h4 class="grey">your personalised astrological guidance</h4>
+      <a href="#welcome" id="startArrow"><i class="fa-solid fa-angles-down grey"></i></a>
     </div>
 
-    <!-- welcome input form -->
+<!-- welcome input form -->
     <div id="welcome" class="welcome-page welcome container thin">
-      <h3>Welcome to Signs!</h3>
+      <div class="">
+        <h3>Welcome to Signs!</h3>
+      </div>
       <div class="inputs">
         <label>What should we call you?</label>
-        <input id="yourName" class="form" type="text" value="Your Name">
+        <input id="yourName" class="form" type="text" placeholder="your name" value="">
         <label> When were you born?</label>
         <input id="date" class="form" type="date">
         <button id="start-btn"> Lets get started! </button>
       </div>
     </div>
 
-    <!-- now info is submitted - first page -->
-    <!-- CONTAINER 1 -->
-    <div id="sunDiv" class="container first-page hide-first-page">
-      <img id="sun" src="" alt="image">
-      <!-- your sign and info -->
+  <!-- PAGE 1 -->
+  <!-- first part -->
+    <div class="container first-page hide-first-page">
+      <div class="announce-zodiac">
+        <img id="symbol" src="" alt="image">
+        <h3 id="answer"></h3>
+      </div>
       <div id="yourSignIntro">
-        <h2 id="answer"></h2>
         <p></p>
       </div>
     </div>
 
 
-    <!-- CONTAINER 2 -->
+  <!-- CONTAINER 2 -->
     <div class="container first-page hide-first-page">
-      <h5 id="guidance">How can we offer guidance? </h5>
+      <h4 id="guidance">How can we offer guidance? </h4>
 
       <div class="realms">
-        <button id="relationships-btn" class="help-buttons">
+        <button id="relationships-btn" class="btn-icon">
           <i class="fas fa-user-friends"></i> <br>
           <span>Relationships</span>
         </button>
-        <button id="other-btn" class="help-buttons">
+        <button id="other-btn" class="btn-icon">
           <i class="fas fa-question"></i>
           <span>Other</span>
         </button>
-        <button id="work-btn" class="help-buttons">
+        <button id="work-btn" class="btn-icon">
           <i class="fas fa-laptop"></i>
           <span>Work</span>
         </button>
       </div>
 
-      <div class=" second-part">
-        <div id="relationships" class="hide-me thanks-universe">
-          <h3>Relationships. What kind?</h3>
-          <button id="fam" class="second-part-button">family</button>
-          <button id="lover" class="second-part-button">lover</button>
-          <button id="friend" class="second-part-button">friend</button>
-          <button id="acqu" class="second-part-button">acquaintence</button>
+      <div class="second-part">
+<!--relationships is selected  -->
+        <div id="relationships" class="hide-me hide">
+          <h3>Relationships</h3>
+          <h4>What kind?</h4>
+          <button id="fam" class="btn-sml">family</button>
+          <button id="lover" class="btn-sml">lover</button>
+          <button id="friend" class="btn-sml">friend</button>
+          <button id="acqu" class="btn-sml">acquaintence</button>
         </div>
-        <div id="relationships-their-sign" class="hide-me thanks-universe">
-          <h4>And whats their star-sign?</h4>
+        <div id="relationships-their-sign" class="hide-me hide">
+          <h4>..and whats their star-sign?</h4>
           <button class="Capricorn">
-            <img src="images/Capricorn.png" alt="Capricorn" class="rel-img">
+            <img src="images/Capricorn.png" alt="Capricorn" class="their-icon">
             Capricorn
           </button>
-          <button class="Acquarius">
-            <img src="images/Acquarius.png" alt="Acquarius" class="rel-img">
-            Acquarius
+          <button class="Aquarius ">
+            <img src="images/Aquarius.png" alt="Aquarius " class="their-icon">
+            Aquarius
           </button>
           <button class="Pisces">
-            <img src="images/Pisces.png" alt="Pisces" class="rel-img">
+            <img src="images/Pisces.png" alt="Pisces" class="their-icon">
             Pisces
           </button>
           <button class="Aries">
-            <img src="images/Aries.png" alt="Aries" class="rel-img">
+            <img src="images/Aries.png" alt="Aries" class="their-icon">
             Aries
           </button>
           <button class="Taurus">
-            <img src="images/Taurus.png" alt="Taurus" class="rel-img">
+            <img src="images/Taurus.png" alt="Taurus" class="their-icon">
             Taurus
           </button>
           <button class="Gemini">
-            <img src="images/Gemini.png" alt="Gemini" class="rel-img">
+            <img src="images/Gemini.png" alt="Gemini" class="their-icon">
             Gemini
           </button>
           <button class="Cancer">
-            <img src="images/Cancer.png" alt="Cancer" class="rel-img">
+            <img src="images/Cancer.png" alt="Cancer" class="their-icon">
             Cancer
           </button>
           <button class="Leo">
-            <img src="images/Leo.png" alt="Leo" class="rel-img">
+            <img src="images/Leo.png" alt="Leo" class="their-icon">
             Leo
           </button>
           <button class="Virgo">
-            <img src="images/Virgo.png" alt="Virgo" class="rel-img">
+            <img src="images/Virgo.png" alt="Virgo" class="their-icon">
             Virgo
           </button>
           <button class="Libra">
-            <img src="images/Libra.png" alt="Libra" class="rel-img">
+            <img src="images/Libra.png" alt="Libra" class="their-icon">
             Libra
           </button>
           <button class="Scorpio">
-            <img src="images/Scorpio.png" alt="Scorpio" class="rel-img">
+            <img src="images/Scorpio.png" alt="Scorpio" class="their-icon">
             Scorpio
           </button>
           <button class="Sagittarius">
-            <img src="images/Sagittarius.png" alt="Sagittarius" class="rel-img">
+            <img src="images/Sagittarius.png" alt="Sagittarius" class="their-icon">
             Sagittarius
           </button>
           <button class="Unknown">
-            <img src="images/Unknown.png" alt="unknown" class="rel-img">
+            <img src="images/Unknown.png" alt="unknown" class="their-icon">
             Unknown
           </button>
         </div>
-        <div id="relationships-answer" class="hide-me thanks-universe">
+        <div id="relationships-answer" class="hide-me hide">
           <h4> </h4>
           <p class="advice-paragraph"> </p>
         </div>
-        <div id="other" class="hide-me thanks-universe">
-          <h3>Other.</h3>
+<!--Other is selected  -->
+        <div id="other" class="hide-me hide">
+          <h3>Other</h3>
           <h4>Ok, whats up?</h4>
-          <button id="cat-advice" class="second-part-button">Should I get a cat?</button>
-          <button id="other-advice" class="second-part-button">Just give me some advice</button>
+          <button id="cat-advice" class="btn-sml">Should I get a cat?</button>
+          <button id="other-advice" class="btn-sml">Just give me some advice</button>
           <p class="advice-paragraph"></p>
         </div>
-        <div id="work" class="hide-me thanks-universe">
+<!-- work is seleced -->
+        <div id="work" class="hide-me hide">
           <h3>Work</h3>
-          <h4> Lets get more specific!</h4>
-          <button id="career-advice" class="second-part-button">Should I change carreers</button>
-          <button id="boss-advice" class="second-part-button">My boss/colleague is a turd</button>
-          <!-- <button id="work-advice" class="second-part-button">Just give me some advice</button> -->
+          <h4>Lets get more specific...</h4>
+          <button id="career-advice" class="btn-sml">Should I change carreers</button>
+          <button id="boss-advice" class="btn-sml">My boss/colleague is a turd</button>
           <p class="advice-paragraph"></p>
         </div>
-        <!-- back button -->
-        <button id="back" class="hide-me second-part-button">Back</button>
+<!-- back button -->
+        <button id="back" class="hide-me btn-sml">Back</button>
       </div>
     </div>
 
-    <!-- main container div -->
-  </div>
+  </div>  <!-- main container div -->
   <footer>
     copyright 2022 jprib media
   </footer>
